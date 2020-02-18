@@ -91,3 +91,10 @@ plot(time,p,col="green")
 lines(time,n,col="red")
 lines(time,p,col="green")
 #create matrix of calculation
+TimeStep <- time
+PreyAbundance <- n
+PredatorAbundance <- p
+myResults <- cbind(TimeStep,PreyAbundance,PredatorAbundance)
+myResults
+#Write matrix to csv
+write.csv(x = myResults, file = "Lab05/PredPreyResults.csv")
