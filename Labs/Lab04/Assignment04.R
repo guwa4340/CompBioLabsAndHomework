@@ -53,3 +53,4 @@ zeros
 time <- 1:12
 n
 plot(time,n)
+
